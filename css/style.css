@@ -1,0 +1,90 @@
+/* Añade esta regla al principio */
+html {
+    height: 100%;
+}
+
+/* Estilos generales para toda la página */
+body {
+    background-color: #dcdfE4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    
+    /* --- LÍNEAS AÑADIDAS PARA EL FOOTER FIJO --- */
+    min-height: 100vh; /* Altura mínima del 100% de la ventana */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+/* Aplica el fondo con degradado solo a la caja de presentación */
+.hero {
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilos para los títulos dentro del hero */
+.hero h1, .hero h2 {
+    text-align: center;
+}
+
+/* Estilo para la imagen de perfil */
+.foto-perfil {
+    display: block;
+    margin: 0 auto 25px; /* Margen inferior para separarla de la nav */
+    width: 160px;
+    border-radius: 32px;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+    padding: 15px 0; /* Espacio interior para que los enlaces no queden pegados */
+    border-bottom: 1px solid #ddd; /* Línea sutil para separar del contenido */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el footer */
+footer p {
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* --- REGLA AÑADIDA PARA EL FOOTER FIJO --- */
+main {
+    flex-grow: 1; /* Hace que el contenido principal crezca y empuje el footer */
+}
+
+/* Estilos generales para el contenido principal */
+section {
+    padding: 20px 40px; /* Añade espacio interior a las secciones */
+    max-width: 800px; /* Centra el contenido en pantallas grandes */
+    margin: 0 auto; /* Centra el bloque de la sección */
+}
+
+/* Estilos para los enlaces dentro de las listas del contenido principal */
+section ul a {
+    color: #007BFF; /* Un azul profesional y legible */
+    text-decoration: none; /* Opcional: quita el subrayado por defecto */
+}
+
+/* Cambia el color cuando el ratón pasa por encima del enlace */
+section ul a:hover {
+    color: #0056b3; /* Un azul más oscuro para dar feedback visual */
+    text-decoration: underline; /* Vuelve a poner el subrayado en el hover */
+}
